@@ -6,7 +6,7 @@
 * **Model date**: August, 2022
 * **Model version**: 1.0
 * **License**: MIT
-* **Model implementation code**: [DNSC_6301_Example_Project.ipynb](DNSC_6301_Example_Project.ipynb)
+* **Model implementation code**: [DNSC_6301_Project.ipynb](https://colab.research.google.com/drive/1rfbg5pgdPFgBpZAr_m_vtZKSFy7kaaU3?usp=sharing)
 
 ### Intended Use
 * **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase.
@@ -32,7 +32,7 @@
 | **DELINQ_NEXT**| target | int | whether a customer's next payment is delinquent (late), 1 = late; 0 = on-time |
 
 * **Source of training data**: GWU Blackboard, email `jphall@gwu.edu` for more information
-* **How training data was divided into training and validation data**: 50% training, 25% validation, 25% test
+* **How training data was divided into training and validation data**: Scikit learn train_test_split() function used to partition data. Conducted two data partitions in order to create three datasets. 50% training, 25% validation, 25% test
 * **Number of rows in training and validation data**:
   * Training rows: 15,000
   * Validation rows: 7,500
@@ -46,7 +46,8 @@
 * **Columns used as inputs in the final model**: 'LIMIT_BAL',
        'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
        'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6',
+       'RACE'
 * **Column(s) used as target(s) in the final model**: 'DELINQ_NEXT'
 * **Type of model**: Decision Tree 
 * **Software used to implement the model**: Python, scikit-learn
