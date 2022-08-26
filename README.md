@@ -54,21 +54,28 @@
 * **Version of the modeling software**: 0.22.2.post1
 * **Hyperparameters or other settings of your model**: 
 ```
-DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
-                       max_depth=6, max_features=None, max_leaf_nodes=None,
-                       min_impurity_decrease=0.0, min_impurity_split=None,
-                       min_samples_leaf=1, min_samples_split=2,
-                       min_weight_fraction_leaf=0.0, presort='deprecated',
-                       random_state=12345, splitter='best')`
+DecisionTreeClassifier('ccp_alpha': 0.0, 'class_weight': None, 
+                       'criterion': 'gini', 'max_depth': 6, 
+                       'max_features': None, 'max_leaf_nodes': None, 
+                       'min_impurity_decrease': 0.0, 
+                       'min_samples_leaf': 1, 'min_samples_split': 2, 
+                       'min_weight_fraction_leaf': 0.0, 
+                       'random_state': 12345, 'splitter': 'best')
 ```
 ### Quantitative Analysis
 
-| Dataset | AUC | AIR |
-| ---- | ------------- | ---------------- |
-|**Training**| '' | '' |
-| **Validation** | '' | '' |
-| **Test** | '' | '' |
+* **Training AUC**: 0.8743
+* **Validation AUC**: 0.6881 
+* **Test AUC**: 0.7438
 
+* **AIR Metrics (Calculated with validation data):**
+
+    | **Protected Group** | **Control Group** | **AIR**|
+    | ---- | ------------- | ---------------- |
+    |Hispanic| White | 0.83 |
+    | Black | White | 0.85 |
+    | Asian | White | 1.00 |
+    | Female | Male | 1.02 |
 #### Correlation Heatmap
 ![Correlation Heatmap](heatmap.png)
 
