@@ -79,5 +79,10 @@ DecisionTreeClassifier('ccp_alpha': 0.0, 'class_weight': None,
 #### Correlation Heatmap
 ![Correlation Heatmap](heatmap.png)
 
+This heatmap shows the largest positive correlation between the target 'DELINQ_NEXT' and another variable is with 'PAY_0' and
+the largest negative correlation between the target 'DELINQ_NEXT' and another variable is with 'RACE'.
+
 #### Final Iteration Plot
 ![Iteration Plot](final_iteration_plot.png)
+
+The final iteration plot shows that the most ideal balance between the AIR and AUC values provided by this model exists at a tree depth of 6.
