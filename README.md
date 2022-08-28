@@ -64,9 +64,9 @@ DecisionTreeClassifier('ccp_alpha': 0.0, 'class_weight': None,
 ```
 ### Quantitative Analysis
 
-* **Training AUC**: 0.8743
-* **Validation AUC**: 0.6881 
-* **Test AUC**: 0.7438
+* **Training AUC (Depth 6)**: 0.7837
+* **Validation AUC (Depth 6)**: 0.7496
+* **Test AUC**(Depth 6): 0.7438
 
 * **AIR Metrics (Calculated with validation data):**
 
@@ -89,8 +89,7 @@ The final iteration plot shows that the most ideal balance between the AIR and A
 
 #### Ethical Considerations
 * **Potential Negative Impacts**
-    * 
-    * Historic social biases teach us that financial data is encoded with racial bias. Even when we test for bias and utilize those results to select an           iteration of the model at an industry standard level of fair, we are accepting that this model will predict that hispanic loan applicants will be           less likely to be qualified for approval than white applicants. By using predictions that are less likely to suggest hispanic applicants as                 recipients of loans, we risk hurting this demographic group and perpetuating the cycle of bias.
+    * Historic social biases teach us that financial data is encoded with racial bias. Even when we test for bias and utilize those results to select an         iteration of the model that performs at an industry standard level of fair, we are accepting that this model will predict that hispanic loan               applicants will be less likely to be qualified for approval than white applicants. By using predictions that are less likely to suggest hispanic           applicants as recipients of loans, we risk hurting this demographic and perpetuating the cycle of bias.
 
 * **Potential Uncertainties**
     * This model has only been tested in the Google Colab environment, further testing would be needed to determine if the results would be affected
