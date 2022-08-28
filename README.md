@@ -95,4 +95,4 @@ The final iteration plot shows that the most ideal balance between the AIR and A
 * **Potential Uncertainties**
     * This model has only been tested in the Google Colab environment, further testing would be needed to determine if the results would be affected
       by a change in development environment or hardware.
-    * This model was developed and tested in a lab environment, and we can not guarantee to know how the model will perform in real world scenarios.             Therefore, the model, it's behavior, and it's results must be closely monitored after production deployment.
+    * This model was developed and tested in a lab environment, and we can not guarantee to know how the model will perform in real world scenarios.             Therefore, the model's behavior and results must be closely monitored after production deployment.
