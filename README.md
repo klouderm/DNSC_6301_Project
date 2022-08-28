@@ -66,7 +66,7 @@ DecisionTreeClassifier('ccp_alpha': 0.0, 'class_weight': None,
 
 * **Training AUC (Depth 6)**: 0.7837
 * **Validation AUC (Depth 6)**: 0.7496
-* **Test AUC**(Depth 6): 0.7438
+* **Test AUC(Depth 6)**: 0.7438
 
 * **AIR Metrics (Calculated with validation data):**
 
